@@ -102,43 +102,5 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Formspree kullandığınızda JavaScript'teki fetch koduna gerek kalmaz,
-      // çünkü tarayıcı formu doğrudan Formspree'ye gönderir.
-      // Bu nedenle, aşağıdaki JavaScript kodu artık gerekli değildir
-      // veya kaldırılabilir/yorum satırı yapılabilir.
-      /*
-      document
-        .getElementById("registerForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-
-          const data = {
-            name: document.getElementById("name").value,
-            age: document.getElementById("age").value,
-            course: document.getElementById("course").value,
-            contact: document.getElementById("contact").value,
-          };
-
-          fetch(
-            "https://script.google.com/macros/s/AKfycbwcJU9KSfkGMI-s7TJ_GUGvG79Z2k5xiUPCMOmE9aB5SU1XDIOcQ6mPAAkhsGcvj9c9/exechttps://script.google.com/macros/s/AKfycbwcJU9KSfkGMI-s7TJ_GUGvG79Z2k5xiUPCMOmE9aB5SU1XDIOcQ6mPAAkhsGcvj9c9/exec",
-            {
-              method: "POST",
-              body: JSON.stringify(data),
-              headers: { "Content-Type": "application/json" },
-            }
-          )
-            .then((response) => response.json())
-            .then((result) => {
-              alert("Başvurunuz başarıyla alındı!");
-              document.getElementById("registerForm").reset();
-            })
-            .catch((error) => {
-              alert("Bir hata oluştu. Lütfen tekrar deneyin.");
-              console.error(error);
-            });
-        });
-      */
-    </script>
   </body>
 </html>
